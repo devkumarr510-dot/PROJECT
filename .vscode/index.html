@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LocalMart – buy directly from Punjab's farmers and neighbourhood vendors.">
+  <title>LocalMart – Farm-fresh and local, delivered</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <div class="announce">Free delivery on orders above ₹500 per seller &nbsp;·&nbsp; Farmers set their own prices</div>
+
+  <header class="topbar">
+    <div class="container hbar">
+      <a class="brand" href="#/" aria-label="LocalMart home">
+        <svg class="mark" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        <span>Local<b>Mart</b></span>
+      </a>
+      <form data-form="heroSearch" class="hsearch" role="search">
+        <input name="q" placeholder="Search products…" aria-label="Search products" autocomplete="off">
+        <button aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </form>
+      <button class="menu-btn" data-act="menu" aria-label="Toggle menu">☰</button>
+      <nav id="nav" class="nav" aria-label="Main"></nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div>
+        <div class="brand"><span>Local<b>Mart</b></span></div>
+        <p>A marketplace where farmers and small vendors sell directly to the people who live around them.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#/shop">All products</a> <a href="#/sellers/farmer">Our farmers</a> <a href="#/sellers/vendor">Local vendors</a>
+      </div>
+      <div>
+        <h4>Sell with us</h4>
+        <a href="#/register/farmer">Register as a farmer</a> <a href="#/register/vendor">Register as a vendor</a> 
+      </div>
+      <div>
+        <h4>Demo logins</h4>
+        <small>Customer: customer@demo.in / customer123<br>
+        Farmer: farmer@demo.in / farmer123<br>
+        Vendor: vendor@demo.in / vendor123<br>
+        Admin: admin@localmart.in / admin123</small>
+        <p><a href="#" data-act="reset">Reset demo data</a></p>
+      </div>
+    </div>
+    <div class="copy">© 2026 LocalMart · College demo project · Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></div>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box"><button class="modal-x" data-act="closeModal" aria-label="Close">✕</button><div id="modalBody"></div></div>
+  </div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
